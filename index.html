@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>O LOVO</title>
+
+    <style>
+        body {
+    background-color: #F7B1AB;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body{
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: #F74E5E;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #F74E5E;
+}
+
+
+button {
+    background-color: #F74E5E;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    box-shadow: 3px 3px #FFD6D6;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FFD6D6;
+    color: #F74E5E;
+    box-shadow: 5px 5px #F7B1AB;
+}
+
+#imagens-aqui {
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+img{
+    border-radius: 10%;
+}
+    </style>
+
+</head>
+
+<body>
+	<h1>A História do Lovo.</h1>
+    <h3>*            Por Lovorismeco               *</h3>
+    <img src="deTerno.jpg" width="300px">
+    <p>Obs: Roupa errada, pq a outra está lavando</p>
+
+
+	<p> Certo dia, eu o LOVORISMECO encontrei o meu amor.</p>
+    <p> A simequinha, a moça mais lindona do mundo</p>
+    <img src="Simeca.jpg" width="300px">
+
+    <p>EU eu, com toda a minha habilidade comunitiva consegui conquista-la</p>
+    <p>Falando: eu não sabo conversar!</p>
+    <p>Desse dia para cá é só lovo e pertubelancia nas nossas vidas</p>
+    <img src="Coracao.jpg" width="300px">
+
+    <p>Separei algum de nossos melhores momentos</p>
+    <p>Está preparada?</p>
+
+    <img src="TaDeOlho.jpg" width="300px">
+    
+    <button id="mostrar-imagens">SIM</button>
+    
+    <div id="imagens-aqui"style="margin-top:10px;"></div>
+
+    <img id="img1" width="300px">
+    <img id="img2" width="300px">
+    <img id="img3" width="300px">
+    <img id="img4" width="300px">
+
+
+    <div id="texto-final"></div>
+    <div id="texto-final2"></div>
+
+    <script>
+        var mostrarImagensBtn = document.getElementById("mostrar-imagens");
+        var img1 = document.getElementById("img1");
+        var img2 = document.getElementById("img2");
+        var img3 = document.getElementById("img3");
+        var img4 = document.getElementById("img4");
+        var textoFinal = document.getElementById("texto-final");
+        var textoFinal2 = document.getElementById("texto-final2");
+
+        mostrarImagensBtn.addEventListener("click", function() {
+            img1.src = "celular.jpg";
+            img2.src = "Lovo.jpg";
+            img3.src = "lingua.jpg";
+            img4.src = "bitoca.jpg";
+            textoFinal.innerHTML = "Simeca venho por meio dessa historinha agradece-la por todo esse tempo, e por todo lovo que me deu. Eu te amo muito e muito. Espero poder passar varios momentos ao teu lado, e chei de bixin ao lado (*-*). VOCÊ SIMEQUINHA É O MEU LOVO"
+            textoFinal2.innerHTML = "JA JA vamos ter nosso casório, né momo <3"
+
+        });
+    </script>
+</body>
+</html>
